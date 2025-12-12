@@ -1,0 +1,31 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Snippets.Tutorial;
+using UnityEngine;
+
+[Serializable]
+public class #SCRIPTNAME# : TutorialStep
+{
+    protected override void OnBegin()
+    {
+        // You can leave this empty if OnUpdate is used.
+        // Or smth like this
+        // GameObject.FindObjectOfType<Player>().OnKilled += Complete;
+    }
+
+    protected override void OnComplete()
+    {
+        // You can leave this empty if OnUpdate is used.
+        // Or smth like this
+        // GameObject.FindObjectOfType<Player>().OnKilled -= Complete;
+    }
+
+    public override void OnUpdate()
+    {
+        // You can leave it empty. 
+        // Or smth like that
+        // if (Input.GetMouseButton(0))
+        //     Complete();
+    }
+}
